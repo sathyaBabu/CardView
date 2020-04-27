@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="view.card.com.cardview.MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="249dp"
+        android:layout_height="160dp"
+        android:background="#ffffff"
+        android:foregroundGravity="center"
+        android:padding="16dp"
+
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="120dp">
+
+        <LinearLayout
+            android:layout_width="270dp"
+            android:layout_height="167dp"
+            android:orientation="vertical"
+            android:weightSum="3"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:baselineAligned="false"
+                android:drawableRight="@android:drawable/ic_menu_search"
+                android:ems="10"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                tools:layout_editor_absoluteX="52dp"
+                tools:layout_editor_absoluteY="53dp" />
+
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:baselineAligned="false"
+                android:ems="10"
+                android:hint="Name"
+                android:inputType="textPersonName" />
+
+
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="215dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:baselineAligned="false"
+                android:text="Button" />
+
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>
